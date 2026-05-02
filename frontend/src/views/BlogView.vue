@@ -23,25 +23,29 @@ function handleSearch(query: string) {
 }
 </script>
 
-<style scoped>
+<style>
 .blog-view {
-  min-height: 200vh;
+  display: block;
+  width: 100%;
+  height: 300vh;
   background: #f8f9fa;
+  position: relative;
+  overflow: visible;
 }
 
-.main {
+.blog-view .main {
   padding: 32px 0;
 }
 
-h1 {
+.blog-view h1 {
   font-size: 32px;
   font-weight: 700;
-  color: #333;
+  color: #000;
   margin-bottom: 16px;
 }
 
-p {
+.blog-view p {
   font-size: 16px;
-  color: #666;
+  color: #444;
 }
 </style>

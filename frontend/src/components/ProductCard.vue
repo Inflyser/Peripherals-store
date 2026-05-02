@@ -65,7 +65,7 @@ function goToProduct() {
 .product-image {
   width: 100%;
   height: 200px;
-  background: #f5f5f5;
+  background: #eee;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +83,7 @@ function goToProduct() {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #000 0%, #000 100%);
   color: white;
   font-size: 48px;
   font-weight: bold;
@@ -97,13 +97,13 @@ function goToProduct() {
   margin: 0 0 8px 0;
   font-size: 18px;
   font-weight: 600;
-  color: #333;
+  color: #000;
 }
 
 .product-category {
   margin: 0 0 8px 0;
   font-size: 14px;
-  color: #666;
+  color: #444;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -111,7 +111,7 @@ function goToProduct() {
 .product-description {
   margin: 0 0 12px 0;
   font-size: 14px;
-  color: #666;
+  color: #444;
   line-height: 1.4;
 }
 
@@ -124,7 +124,7 @@ function goToProduct() {
 .product-price {
   font-size: 20px;
   font-weight: 700;
-  color: #667eea;
+  color: #000;
 }
 
 .product-stock {

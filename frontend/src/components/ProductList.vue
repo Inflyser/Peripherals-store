@@ -54,14 +54,14 @@ function retry() {
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
-  color: #666;
+  color: #444;
 }
 
 .spinner {
   width: 50px;
   height: 50px;
   border: 4px solid #f3f3f3;
-  border-top: 4px solid #667eea;
+  border-top: 4px solid #000;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin-bottom: 16px;
@@ -81,7 +81,7 @@ function retry() {
 .retry-button {
   margin-top: 16px;
   padding: 10px 24px;
-  background: #667eea;
+  background: #000;
   color: white;
   border: none;
   border-radius: 8px;
@@ -91,13 +91,13 @@ function retry() {
 }
 
 .retry-button:hover {
-  background: #5568d3;
+  background: #000;
 }
 
 .empty {
   text-align: center;
   padding: 60px 20px;
-  color: #999;
+  color: #666;
 }
 
 .products-grid {

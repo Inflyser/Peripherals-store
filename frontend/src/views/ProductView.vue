@@ -136,7 +136,7 @@ onMounted(() => {
   gap: 8px;
   padding: 10px 20px;
   background: white;
-  color: #666;
+  color: #444;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   cursor: pointer;
@@ -146,9 +146,9 @@ onMounted(() => {
 }
 
 .back-button:hover {
-  background: #f5f5f5;
-  border-color: #667eea;
-  color: #667eea;
+  background: #eee;
+  border-color: #000;
+  color: #000;
 }
 
 .loading {
@@ -157,14 +157,14 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   padding: 100px 20px;
-  color: #666;
+  color: #444;
 }
 
 .spinner {
   width: 50px;
   height: 50px;
   border: 4px solid #f3f3f3;
-  border-top: 4px solid #667eea;
+  border-top: 4px solid #000;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin-bottom: 16px;
@@ -184,7 +184,7 @@ onMounted(() => {
 .retry-button {
   margin-top: 16px;
   padding: 10px 24px;
-  background: #667eea;
+  background: #000;
   color: white;
   border: none;
   border-radius: 8px;
@@ -194,13 +194,13 @@ onMounted(() => {
 }
 
 .retry-button:hover {
-  background: #5568d3;
+  background: #000;
 }
 
 .not-found {
   text-align: center;
   padding: 100px 20px;
-  color: #999;
+  color: #666;
 }
 
 .product-detail {
@@ -222,7 +222,7 @@ onMounted(() => {
 .product-image {
   width: 100%;
   aspect-ratio: 1;
-  background: #f5f5f5;
+  background: #eee;
   border-radius: 12px;
   overflow: hidden;
   display: flex;
@@ -242,7 +242,7 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #000 0%, #000 100%);
   color: white;
   font-size: 96px;
   font-weight: bold;
@@ -257,7 +257,7 @@ onMounted(() => {
   display: inline-block;
   padding: 6px 12px;
   background: #f0f0f0;
-  color: #666;
+  color: #444;
   border-radius: 6px;
   font-size: 12px;
   text-transform: uppercase;
@@ -284,7 +284,7 @@ onMounted(() => {
 .price {
   font-size: 36px;
   font-weight: 700;
-  color: #667eea;
+  color: #000;
 }
 
 .stock {
@@ -319,7 +319,7 @@ onMounted(() => {
 
 .product-description p {
   margin: 0;
-  color: #666;
+  color: #444;
   line-height: 1.6;
 }
 
@@ -330,7 +330,7 @@ onMounted(() => {
 .add-to-cart-button {
   width: 100%;
   padding: 16px 32px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #000 0%, #000 100%);
   color: white;
   border: none;
   border-radius: 12px;

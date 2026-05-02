@@ -56,7 +56,7 @@ function clearSearch() {
 }
 
 .search-bar:focus-within {
-  border-color: #667eea;
+  border-color: #000;
 }
 
 .search-input {
@@ -69,12 +69,12 @@ function clearSearch() {
 }
 
 .search-input::placeholder {
-  color: #999;
+  color: #444;
 }
 
 .search-button {
   padding: 12px 16px;
-  background: #667eea;
+  background: #000;
   color: white;
   border: none;
   cursor: pointer;
@@ -85,13 +85,13 @@ function clearSearch() {
 }
 
 .search-button:hover {
-  background: #5568d3;
+  background: #000;
 }
 
 .clear-button {
   padding: 12px 8px;
   background: transparent;
-  color: #999;
+  color: #444;
   border: none;
   cursor: pointer;
   display: flex;
@@ -101,6 +101,6 @@ function clearSearch() {
 }
 
 .clear-button:hover {
-  color: #666;
+  color: #444;
 }
 </style>

@@ -97,7 +97,9 @@ watch(() => route.params.category, (newCategory) => {
 }
 
 .main {
-  padding: 32px 0 32px 0;
+  padding: 48px 0 48px 0;
+  background: #eee;
+  min-height: calc(100vh - 200px);
 }
 
 .content {
@@ -131,13 +133,13 @@ watch(() => route.params.category, (newCategory) => {
   margin: 0;
   font-size: 18px;
   font-weight: 600;
-  color: #333;
+  color: #000;
 }
 
 .clear-search-btn {
   padding: 8px 16px;
-  background: #f5f5f5;
-  color: #666;
+  background: #eee;
+  color: #444;
   border: none;
   border-radius: 6px;
   cursor: pointer;

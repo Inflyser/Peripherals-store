@@ -1,22 +1,28 @@
 <template>
   <div class="bottom-panel">
-    <div class="container bottom-panel-container">
-      <div class="bottom-panel-left">
+    <div class="bottom-header">
+      <div class="container bottom-header-container">
         <h2 class="slogan">Give All You Need</h2>
-      </div>
-      <div class="bottom-panel-right">
-        <div class="bottom-search">
-          <input
-            v-model="searchQuery"
-            type="text"
-            placeholder="Поиск товаров..."
-            class="bottom-search-input"
-            @keyup.enter="handleSearch"
-          />
-          <button @click="handleSearch" class="bottom-search-button">
+        <div class="bottom-header-right">
+          <div class="bottom-search">
+            <input
+              v-model="searchQuery"
+              type="text"
+              placeholder="Поиск товаров..."
+              class="bottom-search-input"
+              @keyup.enter="handleSearch"
+            />
+            <button @click="handleSearch" class="bottom-search-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <button class="action-btn" title="Профиль">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
             </svg>
           </button>
         </div>
@@ -27,6 +33,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { RouterLink } from 'vue-router'
 
 const emit = defineEmits<{
   search: [query: string]
@@ -43,64 +50,62 @@ function handleSearch() {
 </script>
 
 <style scoped>
-.bottom-panel {
-  background: #e5e5e5;
-  padding: 40px 0;
+.bottom-header {
+  background: white;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  margin: 0 100px 0 100px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
-.bottom-panel-container {
-  width: 90%;
+.bottom-header-container {
+  width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
-}
-
-.bottom-panel-left {
-  flex-shrink: 0;
 }
 
 .slogan {
   margin: 0;
   font-size: 24px;
   font-weight: 700;
-  color: #333;
+  color: #000;
 }
 
-.bottom-panel-right {
-  flex: 1;
+.bottom-header-right {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  gap: 16px;
 }
 
-.bottom-search {
+.bottom-header-right .bottom-search {
   display: flex;
   align-items: center;
-  background: white;
-  border-radius: 12px;
+  background: #eee;
+  border-radius: 10px;
   overflow: hidden;
-  max-width: 400px;
+  max-width: 300px;
   width: 100%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.bottom-search-input {
+.bottom-header-right .bottom-search-input {
   flex: 1;
-  padding: 12px 16px;
+  padding: 10px 14px;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 14px;
   background: transparent;
 }
 
-.bottom-search-input::placeholder {
-  color: #999;
+.bottom-header-right .bottom-search-input::placeholder {
+  color: #666;
 }
 
-.bottom-search-button {
-  padding: 12px 16px;
+.bottom-header-right .bottom-search-button {
+  padding: 10px 14px;
   background: #000;
   color: white;
   border: none;
@@ -111,8 +116,33 @@ function handleSearch() {
   transition: background 0.3s ease;
 }
 
-.bottom-search-button:hover {
-  background: #333;
+.bottom-header-right .action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #eee;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #000;
+  transition: background 0.3s ease;
+}
+
+.bottom-header-right .action-btn:hover {
+  background: #ddd;
+}
+
+.bottom-panel {
+  background: url('@/assets/font.svg') center/cover no-repeat;
+  padding: 550px 0px 0px 0px;
+}
+
+.bottom-header {
+  background: white;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
 }
 
 /* Адаптивность */

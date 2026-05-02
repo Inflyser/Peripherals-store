@@ -102,7 +102,7 @@ onMounted(() => {
 h1 {
   font-size: 32px;
   font-weight: 700;
-  color: #333;
+  color: #000;
   margin-bottom: 32px;
 }
 
@@ -137,13 +137,13 @@ h1 {
 .search-results h2 {
   font-size: 18px;
   font-weight: 600;
-  color: #333;
+  color: #000;
   margin: 0;
 }
 
 .clear-search-btn {
   padding: 8px 16px;
-  background: #667eea;
+  background: #000;
   color: white;
   border: none;
   border-radius: 6px;
@@ -153,7 +153,7 @@ h1 {
 }
 
 .clear-search-btn:hover {
-  background: #5568d3;
+  background: #000;
 }
 
 @media (max-width: 768px) {

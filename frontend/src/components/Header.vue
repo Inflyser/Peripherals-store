@@ -66,22 +66,29 @@ function toggleSearch() {
 
 <style scoped>
 .header {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   position: sticky;
   top: 0;
   z-index: 100;
   background: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  padding: 12px 0;
+  padding: 12px 0 12px 0;
+  margin-left: 100px;
+  margin-right: 100px;
   display: flex;
   justify-content: center;
 }
 
 .header-container {
-  width: 90%;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  border-radius: 0 0 20px 20px;
 }
 
 .container {
@@ -110,14 +117,14 @@ function toggleSearch() {
 
 .logo-icon {
   flex-shrink: 0;
-  color: #333;
+  color: #000;
 }
 
 .brand-name {
   margin: 0;
   font-size: 24px;
   font-weight: 700;
-  color: #333;
+  color: #000;
   white-space: nowrap;
 }
 
@@ -131,7 +138,7 @@ function toggleSearch() {
 }
 
 .nav-link {
-  color: #333;
+  color: #000;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
@@ -172,16 +179,16 @@ function toggleSearch() {
   justify-content: center;
   width: 50px;
   height: 50px;
-  background: #f5f5f5;
+  background: #eee;
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  color: #333;
+  color: #000;
   transition: all 0.3s ease;
 }
 
 .search-btn:hover {
-  background: #e5e5e5;
+  background: #ddd;
   color: #000;
 }
 
@@ -198,16 +205,16 @@ function toggleSearch() {
   justify-content: center;
   width: 50px;
   height: 50px;
-  background: #f5f5f5;
+  background: #eee;
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  color: #333;
+  color: #000;
   transition: all 0.3s ease;
 }
 
 .action-btn:hover {
-  background: #e5e5e5;
+  background: #ddd;
   color: #000;
 }
 

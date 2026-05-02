@@ -19,8 +19,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #333;
-  background: #f8f9fa;
+  color: #000;
+  background: #fff;
 }
 
 #app {
@@ -34,13 +34,13 @@ body {
 }
 
 a {
-  color: #667eea;
+  color: #000;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #5568d3;
+  color: #000;
 }
 
 button {

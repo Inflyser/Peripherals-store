@@ -41,7 +41,7 @@ function selectCategory(category: string) {
   margin: 0 0 16px 0;
   font-size: 18px;
   font-weight: 600;
-  color: #333;
+  color: #000;
 }
 
 .category-list {
@@ -53,7 +53,7 @@ function selectCategory(category: string) {
 .category-button {
   padding: 10px 16px;
   background: transparent;
-  color: #666;
+  color: #444;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   cursor: pointer;
@@ -63,13 +63,13 @@ function selectCategory(category: string) {
 }
 
 .category-button:hover {
-  background: #f5f5f5;
-  border-color: #667eea;
+  background: #eee;
+  border-color: #000;
 }
 
 .category-button.active {
-  background: #667eea;
+  background: #000;
   color: white;
-  border-color: #667eea;
+  border-color: #000;
 }
 </style>
